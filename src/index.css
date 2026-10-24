@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #07080B;
+    --color-surface: #0C0E14;
+    --color-surface-hover: #161B26;
+    --color-border: rgba(255, 255, 255, 0.08);
+  }
+
+  body {
+    background-color: #07080B;
+    color: #F1F5F9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Glassmorphism & UI Utilities */
+@layer utilities {
+  .glass-card {
+    background: rgba(12, 14, 20, 0.75);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-card-hover {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .glass-card-hover:hover {
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.15);
+    transform: translateY(-3px);
+  }
+
+  .glass-nav {
+    background: rgba(7, 8, 11, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .text-gradient-purple-lime {
+    background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 40%, #A78BFA 70%, #BEF264 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-purple {
+    background: linear-gradient(135deg, #C084FC 0%, #8B5CF6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-lime {
+    background: linear-gradient(135deg, #CCFF00 0%, #A3E635 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 40px -10px rgba(139, 92, 246, 0.45);
+  }
+
+  .glow-lime {
+    box-shadow: 0 0 35px -8px rgba(190, 242, 100, 0.4);
+  }
+
+  .bg-radial-glow {
+    background: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.18) 0%, rgba(190, 242, 100, 0.06) 40%, transparent 70%);
+  }
+
+  .badge-lime {
+    background: rgba(190, 242, 100, 0.12);
+    color: #BEF264;
+    border: 1px solid rgba(190, 242, 100, 0.28);
+  }
+
+  .badge-purple {
+    background: rgba(139, 92, 246, 0.14);
+    color: #C084FC;
+    border: 1px solid rgba(139, 92, 246, 0.32);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07080B;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F2636;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2C3549;
+}

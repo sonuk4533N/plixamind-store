@@ -1,0 +1,6 @@
+# Plixamind Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin
+
+Sitemap: https://plixamind.com/sitemap.xml
