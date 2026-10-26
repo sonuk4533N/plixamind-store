@@ -92,32 +92,14 @@ export const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center gap-3">
             <button
               onClick={() => scrollToSection('products')}
-              className="px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 hover:border-purple-500/40 transition-all cursor-pointer"
+              className="px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-neon-bright to-neon-lime text-charcoal-950 hover:opacity-95 shadow-md shadow-neon/15 transition-all cursor-pointer"
             >
               Browse Catalog
             </button>
-
-            <Link
-              to="/admin"
-              className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-electric/20 border border-electric/40 text-electric-light hover:bg-electric/30 hover:border-electric transition-all"
-              title="Admin Management Console"
-            >
-              <ShieldCheck className="w-4 h-4 text-neon-bright" />
-              <span>Admin</span>
-            </Link>
           </div>
 
           {/* Mobile Hamburger Button */}
           <div className="flex items-center gap-2 md:hidden">
-            <Link
-              to="/admin"
-              className="p-2 rounded-lg bg-white/5 text-slate-300 hover:text-white"
-              title="Admin"
-              aria-label="Admin panel"
-            >
-              <ShieldCheck className="w-5 h-5 text-neon-bright" />
-            </Link>
-
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg bg-white/5 text-slate-300 hover:text-white focus:outline-none"
@@ -145,14 +127,14 @@ export const Navbar: React.FC = () => {
               className="flex items-center gap-3 py-2 text-left text-neon-bright"
             >
               <Sparkles className="w-4 h-4 text-neon-bright" />
-              Bestsellers & Top Rated
+              Bestsellers & Featured
             </button>
             <button
               onClick={() => scrollToSection('benefits')}
               className="flex items-center gap-3 py-2 text-left hover:text-neon-bright transition-colors"
             >
               <ShieldCheck className="w-4 h-4 text-purple-400" />
-              Why Plixamind (Trust & Delivery)
+              Why Plixamind (Quality & Delivery)
             </button>
             <button
               onClick={() => scrollToSection('faqs')}
@@ -172,14 +154,12 @@ export const Navbar: React.FC = () => {
           </div>
 
           <div className="pt-3 border-t border-white/10 flex flex-col gap-2.5">
-            <Link
-              to="/admin"
-              onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-electric/20 border border-electric/40 text-electric-light flex items-center justify-center gap-2"
+            <button
+              onClick={() => scrollToSection('products')}
+              className="w-full text-center py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-neon-bright to-neon-lime text-charcoal-950 shadow-md shadow-neon/15"
             >
-              <ShieldCheck className="w-4 h-4 text-neon-bright" />
-              Admin Portal
-            </Link>
+              Browse Catalog
+            </button>
           </div>
         </div>
       )}

@@ -26,7 +26,7 @@ export const Footer: React.FC<FooterProps> = ({ settings }) => {
             </Link>
             
             <p className="text-xs text-slate-400 leading-relaxed">
-              Curated, production-grade digital templates, ebooks, and toolkits engineered for India's ambitious creators, designers, and developers.
+              Curated, production-grade digital operating systems, architectural toolkits, and design systems engineered for modern founders, developers, and creators.
             </p>
 
             <div className="flex items-center gap-2 text-xs text-slate-400 pt-1">
@@ -125,7 +125,7 @@ export const Footer: React.FC<FooterProps> = ({ settings }) => {
               )}
               <li className="pt-1">
                 <span className="text-[11px] text-slate-400">
-                  ⚡ Typical response time: under 12 hours
+                  Average response time: within 12 business hours
                 </span>
               </li>
             </ul>
@@ -136,7 +136,7 @@ export const Footer: React.FC<FooterProps> = ({ settings }) => {
         {/* Bottom Disclaimer & Copyright */}
         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>
-            © {new Date().getFullYear()} Plixamind. All digital rights reserved. Handcrafted for builders in India.
+            © {new Date().getFullYear()} Plixamind Technologies. All rights reserved. Engineered for high-performance builders.
           </p>
           <div className="flex items-center gap-4">
             <Link to="/admin" className="text-slate-400 hover:text-slate-200 transition-colors">

@@ -2,10 +2,10 @@ import { supabase, isSupabaseConfigured } from '../lib/supabase';
 import { Product, Category, SiteSettings, TrackingEventRecord } from '../types';
 import { INITIAL_PRODUCTS, INITIAL_CATEGORIES, INITIAL_SITE_SETTINGS } from '../data/mockData';
 
-const LOCAL_STORAGE_PRODUCTS = 'plixamind_products_v1';
-const LOCAL_STORAGE_CATEGORIES = 'plixamind_categories_v1';
-const LOCAL_STORAGE_SETTINGS = 'plixamind_settings_v1';
-const LOCAL_STORAGE_EVENTS = 'plixamind_events_v1';
+const LOCAL_STORAGE_PRODUCTS = 'plixamind_products_v2';
+const LOCAL_STORAGE_CATEGORIES = 'plixamind_categories_v2';
+const LOCAL_STORAGE_SETTINGS = 'plixamind_settings_v2';
+const LOCAL_STORAGE_EVENTS = 'plixamind_events_v2';
 
 // Helpers for localStorage fallback
 function getLocalProducts(): Product[] {

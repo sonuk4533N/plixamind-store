@@ -22,7 +22,7 @@ export const Hero: React.FC<HeroProps> = ({ settings, onExploreClick, onBestsell
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-charcoal-900/90 border border-purple-500/30 text-xs sm:text-sm text-slate-200 mb-6 shadow-inner animate-float">
           <span className="w-2 h-2 rounded-full bg-neon-bright animate-ping" />
           <span className="font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-neon-bright to-white">
-            {settings.hero_badge || '⚡ INDIA’S PREMIER DIGITAL ASSET STORE'}
+            {settings.hero_badge || 'VERIFIED DIGITAL ASSETS & SYSTEMS'}
           </span>
         </div>
 
@@ -41,7 +41,7 @@ export const Hero: React.FC<HeroProps> = ({ settings, onExploreClick, onBestsell
         {/* Subtitle */}
         <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-300 font-normal leading-relaxed mb-10">
           {settings.hero_subheadline ||
-            'Curated Notion systems, developer roadmaps, legally drafted contracts, and UI design kits built for ambitious students, freelancers, and builders across India.'}
+            'Production-ready Notion operating systems, architectural roadmaps, commercial legal suites, and Figma design kits engineered for founders, engineers, and digital specialists.'}
         </p>
 
         {/* Call to Action Buttons */}
@@ -71,8 +71,8 @@ export const Hero: React.FC<HeroProps> = ({ settings, onExploreClick, onBestsell
               <Download className="w-5 h-5 text-neon-bright" />
             </div>
             <div>
-              <p className="text-xs sm:text-sm font-bold text-white leading-tight">Instant Download</p>
-              <p className="text-[11px] text-slate-400">Links delivered in seconds</p>
+              <p className="text-xs sm:text-sm font-bold text-white leading-tight">Instant Delivery</p>
+              <p className="text-[11px] text-slate-400">Immediate access upon checkout</p>
             </div>
           </div>
 
@@ -81,8 +81,8 @@ export const Hero: React.FC<HeroProps> = ({ settings, onExploreClick, onBestsell
               <Zap className="w-5 h-5 text-neon-bright" />
             </div>
             <div>
-              <p className="text-xs sm:text-sm font-bold text-white leading-tight">100% Digital Assets</p>
-              <p className="text-[11px] text-slate-400">Zero shipping fees or delays</p>
+              <p className="text-xs sm:text-sm font-bold text-white leading-tight">Production Ready</p>
+              <p className="text-[11px] text-slate-400">Vetted architectures & assets</p>
             </div>
           </div>
 
@@ -91,8 +91,8 @@ export const Hero: React.FC<HeroProps> = ({ settings, onExploreClick, onBestsell
               <Smartphone className="w-5 h-5 text-purple-300" />
             </div>
             <div>
-              <p className="text-xs sm:text-sm font-bold text-white leading-tight">UPI & Cards</p>
-              <p className="text-[11px] text-slate-400">GPay, PhonePe, Paytm, Cards</p>
+              <p className="text-xs sm:text-sm font-bold text-white leading-tight">Flexible Payments</p>
+              <p className="text-[11px] text-slate-400">UPI, Cards, RuPay & NetBanking</p>
             </div>
           </div>
 
@@ -102,7 +102,7 @@ export const Hero: React.FC<HeroProps> = ({ settings, onExploreClick, onBestsell
             </div>
             <div>
               <p className="text-xs sm:text-sm font-bold text-white leading-tight">Verified Checkout</p>
-              <p className="text-[11px] text-slate-400">Secured via SuperProfile</p>
+              <p className="text-[11px] text-slate-400">256-bit SSL secured gateway</p>
             </div>
           </div>
 

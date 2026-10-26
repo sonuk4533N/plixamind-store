@@ -86,24 +86,39 @@ export const ContactPage: React.FC = () => {
               </a>
             </div>
 
-            {/* WhatsApp Card */}
-            <div className="glass-card rounded-2xl p-6 border border-white/10 space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
-                <MessageCircle className="w-5 h-5" />
+            {/* WhatsApp or Direct Desk Card */}
+            {settings?.support_whatsapp ? (
+              <div className="glass-card rounded-2xl p-6 border border-white/10 space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                  <MessageCircle className="w-5 h-5" />
+                </div>
+                <h3 className="font-display font-bold text-white text-base">WhatsApp Support</h3>
+                <p className="text-xs text-slate-400">
+                  Direct assistance for download verification or pre-sale questions.
+                </p>
+                <a
+                  href={`https://wa.me/${settings.support_whatsapp.replace(/[^0-9]/g, '')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-bold text-emerald-400 hover:underline pt-1"
+                >
+                  <span>{settings.support_whatsapp}</span>
+                </a>
               </div>
-              <h3 className="font-display font-bold text-white text-base">WhatsApp Quick Chat</h3>
-              <p className="text-xs text-slate-400">
-                Quick responses for urgent download assistance or pre-sale questions.
-              </p>
-              <a
-                href={`https://wa.me/${(settings?.support_whatsapp || '919876543210').replace(/[^0-9]/g, '')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-bold text-emerald-400 hover:underline pt-1"
-              >
-                <span>{settings?.support_whatsapp || '+91 98765 43210'}</span>
-              </a>
-            </div>
+            ) : (
+              <div className="glass-card rounded-2xl p-6 border border-white/10 space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-neon/15 border border-neon/30 flex items-center justify-center text-neon-bright">
+                  <MessageCircle className="w-5 h-5" />
+                </div>
+                <h3 className="font-display font-bold text-white text-base">Priority Helpdesk</h3>
+                <p className="text-xs text-slate-400">
+                  Submit an inquiry below and our support team will review your order details directly.
+                </p>
+                <span className="inline-block text-xs font-semibold text-slate-300 pt-1">
+                  Average response: &lt; 12 hours
+                </span>
+              </div>
+            )}
 
             {/* Response Time SLA */}
             <div className="p-5 rounded-2xl bg-charcoal-900 border border-white/5 flex items-center gap-3">
@@ -140,7 +155,7 @@ export const ContactPage: React.FC = () => {
                     Message Received!
                   </h3>
                   <p className="text-sm text-slate-300 max-w-sm mx-auto leading-relaxed">
-                    Thank you, <strong>{name}</strong>. We've logged your request and our founder will reply directly to <strong>{email}</strong> shortly.
+                    Thank you, <strong>{name}</strong>. Your request has been logged and our support team will follow up directly at <strong>{email}</strong> within 12 business hours.
                   </p>
                   <button
                     onClick={() => {
@@ -168,7 +183,7 @@ export const ContactPage: React.FC = () => {
                         required
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        placeholder="Aarav Sharma"
+                        placeholder="Your name or organization"
                         className="w-full bg-charcoal-900 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-purple-500/60"
                       />
                     </div>
@@ -182,7 +197,7 @@ export const ContactPage: React.FC = () => {
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="aarav@example.com"
+                        placeholder="name@company.com"
                         className="w-full bg-charcoal-900 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-purple-500/60"
                       />
                     </div>
@@ -196,7 +211,7 @@ export const ContactPage: React.FC = () => {
                       type="text"
                       value={orderId}
                       onChange={(e) => setOrderId(e.target.value)}
-                      placeholder="e.g. SP-98234-ORD"
+                      placeholder="e.g. SP-849201"
                       className="w-full bg-charcoal-900 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-purple-500/60"
                     />
                   </div>
@@ -210,7 +225,7 @@ export const ContactPage: React.FC = () => {
                       rows={5}
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      placeholder="Tell us what you need help with or ask any questions about our products..."
+                      placeholder="Describe your inquiry, order details, or custom licensing request..."
                       className="w-full bg-charcoal-900 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-purple-500/60"
                     />
                   </div>

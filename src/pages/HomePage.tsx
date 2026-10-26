@@ -18,7 +18,7 @@ export const HomePage: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = 'Plixamind — Premium Digital Products, Templates & Bundles for Creators';
+    document.title = 'Plixamind | Premium Digital Assets, Systems & Toolkits';
 
     async function loadData() {
       try {

@@ -87,10 +87,19 @@ export const RefundPolicy: React.FC = () => {
                 <a href={`mailto:${settings?.support_email || 'support@plixamind.com'}`} className="text-neon-bright underline">
                   {settings?.support_email || 'support@plixamind.com'}
                 </a>{' '}
-                or reach out via WhatsApp at{' '}
-                <span className="text-white font-semibold">{settings?.support_whatsapp || '+91 98765 43210'}</span>.
+                {settings?.support_whatsapp ? (
+                  <>
+                    or reach out via WhatsApp at{' '}
+                    <a href={`https://wa.me/${settings.support_whatsapp.replace(/[^0-9]/g, '')}`} className="text-white font-semibold underline">
+                      {settings.support_whatsapp}
+                    </a>
+                  </>
+                ) : (
+                  <>or submit an inquiry through our Contact & Support desk</>
+                )}
+                .
               </li>
-              <li>Our support team will verify the issue and respond with updated download links or assistance within 48 business hours.</li>
+              <li>Our support team will verify the issue and respond with updated download links or assistance within 24 business hours.</li>
             </ol>
           </section>
 

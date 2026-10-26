@@ -14,32 +14,32 @@ export const BenefitsSection: React.FC = () => {
     {
       icon: <Download className="w-6 h-6 text-neon-bright" />,
       title: 'Automated Instant Delivery',
-      description: 'Zero waiting. Once your payment succeeds on SuperProfile, your download link opens immediately and a backup copy is dispatched to your email inbox within 30 seconds.'
+      description: 'Zero waiting time. Once checkout is completed on SuperProfile, your download link opens immediately and a backup confirmation is dispatched to your email inbox within seconds.'
     },
     {
       icon: <Zap className="w-6 h-6 text-purple-400" />,
-      title: 'Built for Action, Zero Fluff',
-      description: 'Every Notion architecture, guide, and component set is engineered to solve a practical problem. No filler pages, no bloated lectures—just plug-and-play digital assets.'
+      title: 'Engineered for High Performance',
+      description: 'Every Notion workspace, architectural blueprint, and component kit is designed to solve complex operational challenges. High signal, rigorously structured, and immediately actionable.'
     },
     {
       icon: <CreditCard className="w-6 h-6 text-emerald-400" />,
-      title: 'Frictionless Indian Payment Stack',
-      description: 'Checkout securely via SuperProfile using UPI (Google Pay, PhonePe, Paytm, CRED), RuPay, Visa, Mastercard, or NetBanking across all major Indian banks.'
+      title: 'Seamless Indian Payment Gateway',
+      description: 'Checkout securely via SuperProfile with full support for UPI (Google Pay, PhonePe, Paytm, CRED), RuPay, Visa, Mastercard, and NetBanking across all major banks.'
     },
     {
       icon: <RefreshCw className="w-6 h-6 text-neon-bright" />,
-      title: 'Free Lifetime Updates',
-      description: 'When tools or regulations change (like Notion updates, new tax rules, or design tokens), our products are refreshed and you receive the new versions at zero additional cost.'
+      title: 'Continuous Version Updates',
+      description: 'As design tokens, framework versions, or regulatory standards evolve, our digital assets are updated. Registered purchasers receive latest version enhancements at zero extra cost.'
     },
     {
       icon: <ShieldCheck className="w-6 h-6 text-purple-400" />,
-      title: 'Honest Delivery Guarantee',
-      description: 'If you ever encounter an issue accessing your files or a link is broken, our support team will manually verify and deliver your digital assets within 48 hours.'
+      title: 'Dedicated Delivery Guarantee',
+      description: 'If you encounter any difficulty duplicating a workspace or accessing files, our support team directly verifies and resolves your access within 12–24 business hours.'
     },
     {
       icon: <Lock className="w-6 h-6 text-amber-400" />,
-      title: 'Bank-Grade Security',
-      description: 'We do not collect or store credit card or bank details on our servers. All transactions are securely routed through SuperProfile with 256-bit SSL encryption.'
+      title: 'Enterprise-Grade Security',
+      description: 'We do not store or process card numbers, UPI PINs, or sensitive banking details on our servers. All transactions are securely routed via 256-bit encrypted checkout.'
     }
   ];
 
@@ -52,10 +52,10 @@ export const BenefitsSection: React.FC = () => {
           <span>The Plixamind Standard</span>
         </div>
         <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-          Engineered for Quality, Speed & Trust
+          Engineered for Quality, Speed & Reliability
         </h2>
         <p className="text-sm sm:text-base text-slate-400 mt-3 leading-relaxed">
-          We believe in complete transparency. No fake countdown timers, no artificial review stars, and no exaggerated claims—just meticulously built digital resources.
+          Crafted with rigorous technical discipline and aesthetic precision. Every resource is architected to save you hundreds of hours of design, research, and trial-and-error.
         </p>
       </div>
 

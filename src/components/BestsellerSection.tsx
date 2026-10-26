@@ -30,7 +30,7 @@ export const BestsellerSection: React.FC<BestsellerSectionProps> = ({ products }
             Our Top Bestsellers
           </h2>
           <p className="text-sm sm:text-base text-slate-400 mt-2">
-            The most downloaded frameworks, Notion setups, and playbooks trusted by creators across India.
+            Our most downloaded operating systems, design foundations, and architectural playbooks trusted by modern builders.
           </p>
         </div>
 
